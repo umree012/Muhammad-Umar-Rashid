@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Muhammad Umar Rashid — Developer & Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursor-follower"></div>
+
+<!-- PRELOADER -->
+<div class="preloader" id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">U.R</div>
+    <div class="preloader-bar"><div class="preloader-fill" id="preloader-fill"></div></div>
+    <div class="preloader-num" id="preloader-num">0%</div>
+  </div>
+</div>
+
+<!-- NOISE OVERLAY -->
+<div class="noise" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo"><a href="#hero">U<span>.</span>R</a></div>
+  <button class="nav-menu-btn" id="nav-menu-btn">
+    <span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#mun" class="nav-link">MUN</a></li>
+    <li><a href="#certificates" class="nav-link">Certs</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="Muhammad_Umar_Rashid_CV.pdf" download class="nav-cta">Download CV</a></li>
+  </ul>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-inner">
+    <a href="#about" class="mm-link">About</a>
+    <a href="#skills" class="mm-link">Skills</a>
+    <a href="#projects" class="mm-link">Projects</a>
+    <a href="#experience" class="mm-link">Experience</a>
+    <a href="#mun" class="mm-link">MUN</a>
+    <a href="#certificates" class="mm-link">Certs</a>
+    <a href="#contact" class="mm-link">Contact</a>
+    <a href="Muhammad_Umar_Rashid_CV.pdf" download class="mm-cta">Download CV ↓</a>
+    <div class="mm-social">
+      <a href="https://github.com/umree012" target="_blank">GitHub</a>
+      <a href="https://instagram.com/umree_drafts" target="_blank">Instagram</a>
+      <a href="https://www.upwork.com/freelancers/~0110e004e3355dd044" target="_blank">Upwork</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal-char">CS Student · Developer · Founder · PAC Intern</p>
+    <h1 class="hero-title">
+      <span class="hero-line reveal-line">MUHAMMAD</span>
+      <span class="hero-line reveal-line">UMAR</span>
+      <span class="hero-line reveal-line accent">RASHID</span>
+    </h1>
+    <div class="hero-sub reveal-fade">
+      <span>Flutter</span><span>·</span>
+      <span>Node.js</span><span>·</span>
+      <span>Firebase</span><span>·</span>
+      <span>Cisco</span><span>·</span>
+      <span>CEO @ Digital IT</span>
+    </div>
+    <div class="hero-cta reveal-fade">
+      <a href="#projects" class="btn-main magnetic">View My Work</a>
+      <a href="Muhammad_Umar_Rashid_CV.pdf" download class="btn-ghost magnetic">Download CV ↓</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+  <div class="hero-models">
+    <div class="model-wrap" id="mustache-wrap">
+      <canvas id="mustache-canvas"></canvas>
+      <p>// signature</p>
+    </div>
+    <div class="model-wrap" id="horse-wrap">
+      <canvas id="horse-canvas"></canvas>
+      <p>// passion</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE STRIP -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Flutter</span><span>·</span><span>Node.js</span><span>·</span>
+    <span>Firebase</span><span>·</span><span>Cisco</span><span>·</span>
+    <span>Assembly</span><span>·</span><span>Figma</span><span>·</span>
+    <span>React</span><span>·</span><span>Python</span><span>·</span>
+    <span>Java</span><span>·</span><span>C++</span><span>·</span>
+    <span>MySQL</span><span>·</span><span>Git</span><span>·</span>
+    <span>Postman</span><span>·</span><span>Flutter</span><span>·</span>
+    <span>Node.js</span><span>·</span><span>Firebase</span><span>·</span>
+    <span>Cisco</span><span>·</span><span>Assembly</span><span>·</span>
+    <span>Figma</span><span>·</span><span>React</span><span>·</span>
+    <span>Python</span><span>·</span><span>Java</span><span>·</span>
+    <span>C++</span><span>·</span><span>MySQL</span><span>·</span><span>Git</span><span>·</span>
+  </div>
+</div>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 01 — About ]</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="big-heading split-text">I build things<br/>that <em>work.</em></h2>
+        <div class="about-photo-wrap reveal-scale">
+          <img src="images/umar_web.jpg" alt="Muhammad Umar Rashid" class="about-photo"/>
+          <div class="photo-tag">PAC Kamra Intern 2026</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <p class="about-lead reveal-fade">4th-semester CS student at Air University, Aerospace &amp; Aviation Campus Kamra. I write code that ships, lead teams that win, and communicate ideas that stick.</p>
+        <p class="about-body reveal-fade">Founder of <strong>Digital IT</strong>, active Upwork freelancer, and currently interning at <strong>Pakistan Aeronautical Complex (PAC) Kamra</strong> — one of Pakistan's most prestigious defence organisations — in the MRF Computer Centre, Department of IT.</p>
+        <p class="about-body reveal-fade">Two-time MUN award winner. General Secretary of Student Council. Media Lead for university events. Daily content creator at <a href="https://instagram.com/umree_drafts" target="_blank" class="text-link">@umree_drafts</a>.</p>
+        <div class="about-stats reveal-fade">
+          <div class="stat-item"><span class="stat-n" data-target="8">0</span><span class="stat-plus">+</span><p>Projects Built</p></div>
+          <div class="stat-item"><span class="stat-n" data-target="2">0</span><span class="stat-plus">x</span><p>MUN Award Winner</p></div>
+          <div class="stat-item"><span class="stat-n" data-target="3">0</span><span class="stat-plus">+</span><p>Years Freelancing</p></div>
+          <div class="stat-item"><span class="stat-n" data-target="600">0</span><span class="stat-plus">+</span><p>MUN Delegates Beaten</p></div>
+        </div>
+        <div class="terminal reveal-fade">
+          <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><code>umar@portfolio ~</code></div>
+          <div class="term-body" id="terminal-body"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SKILLS ═══════ -->
+<section class="skills section" id="skills">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 02 — Tech Stack ]</div>
+    <h2 class="big-heading split-text reveal-fade">What I work<br/>with.</h2>
+    <div class="skills-logos reveal-fade">
+      <!-- Row of tech logos with SVG icons -->
+      <div class="logo-item magnetic" title="Flutter"><div class="logo-icon flutter-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M14 29L27.5 15.5H41L20.5 36L14 29Z" fill="#54C5F8"/><path d="M14 29L20.5 22.5L27 29L20.5 36L14 29Z" fill="#01579B"/><path d="M27.5 15.5H41L27.5 2H14L27.5 15.5Z" fill="#54C5F8"/></svg>
+      </div><span>Flutter</span></div>
+      <div class="logo-item magnetic" title="Dart"><div class="logo-icon dart-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M7 7L17 4L44 22L41 41L7 41L7 7Z" fill="#00B4AB"/><path d="M7 7L17 4L24 11L14 14L7 7Z" fill="#00D2B8"/></svg>
+      </div><span>Dart</span></div>
+      <div class="logo-item magnetic" title="Node.js"><div class="logo-icon node-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" fill="#339933"/><path d="M24 4L42 14V34L24 44L6 34V14L24 4Z" fill="none" stroke="#fff" stroke-width="1.5" stroke-opacity=".2"/><text x="24" y="28" text-anchor="middle" font-size="10" fill="white" font-weight="bold">JS</text></svg>
+      </div><span>Node.js</span></div>
+      <div class="logo-item magnetic" title="Firebase"><div class="logo-icon firebase-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M8 38L15 10L22 22L8 38Z" fill="#FFA000"/><path d="M22 22L29 8L40 38L22 22Z" fill="#F57C00"/><path d="M8 38L22 22L40 38L8 38Z" fill="#FFCA28"/></svg>
+      </div><span>Firebase</span></div>
+      <div class="logo-item magnetic" title="Python"><div class="logo-icon python-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C15 4 16 8 16 8V16H24V18H10C10 18 4 17.2 4 26C4 34.8 9.4 34 9.4 34H14V26C14 26 13.6 20 20 20H28C28 20 34 20.2 34 14C34 7.8 33 4 24 4Z" fill="#3776AB"/><path d="M24 44C33 44 32 40 32 40V32H24V30H38C38 30 44 30.8 44 22C44 13.2 38.6 14 38.6 14H34V22C34 22 34.4 28 28 28H20C20 28 14 27.8 14 34C14 40.2 15 44 24 44Z" fill="#FFD43B"/><circle cx="20" cy="12" r="2" fill="white"/><circle cx="28" cy="36" r="2" fill="#3776AB"/></svg>
+      </div><span>Python</span></div>
+      <div class="logo-item magnetic" title="Java"><div class="logo-icon java-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M18 34S16 35.4 19 36.2C22.8 37.2 24.8 37.1 27.8 36.5C27.8 36.5 28.8 37.2 30.2 37.6C20.8 41.6 8.4 37.4 18 34Z" fill="#EA2D2E"/><path d="M16.8 29.4S14.4 31.4 17.4 31.8C21.4 32.4 24.6 32.4 30 31C30 31 30.6 31.8 31.8 32.2C19.8 35.4 6.6 32.4 16.8 29.4Z" fill="#EA2D2E"/><path d="M23.6 20.2C26.2 23.2 22.8 26 22.8 26C28.6 22.8 25.8 18 23.6 20.2Z" fill="#EA2D2E"/><path d="M29.8 38.6S31.2 39.8 28.4 40.8C23.2 42.6 9.4 43.2 4.8 40.8C3 39.8 6.4 38.4 7.4 38.2C8.4 37.8 9 37.8 9 37.8C7.6 36.8 0 39.8 4.6 40.8C17.4 43.8 28.4 40.2 29.8 38.6Z" fill="#EA2D2E"/><path d="M18.6 23.8S9.8 25.8 15.4 26.6C17.8 27 22.6 26.8 27 26.4C30.6 26.2 34 25.6 34 25.6S32.8 26.2 31.8 26.8C21.2 29.6 4.8 28.6 9.8 26C14 23.8 18.6 23.8 18.6 23.8Z" fill="#EA2D2E"/><path d="M32 32.8C42.8 27.2 37.8 22 34.4 22.8C33.6 23 33.2 23.2 33.2 23.2S33.6 22.4 34.4 22.2C41 20 46 28 32.8 33.2C32.8 33 32.4 32.8 32 32.8Z" fill="#EA2D2E"/><path d="M25 4S29.8 8.8 20.4 16C12.8 22 18.8 25.8 20.4 29.8C16.4 26.2 13.4 23 15.4 19.8C18.4 15.2 26.8 12.8 25 4Z" fill="#EA2D2E"/></svg>
+      </div><span>Java</span></div>
+      <div class="logo-item magnetic" title="C++"><div class="logo-icon cpp-icon">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" fill="#00599C"/><text x="24" y="30" text-anchor="middle" font-size="16" fill="white" font-weight="bold">C++</text></svg>
+      </div><span>C++</span></div>
+      <div class="logo-item magnetic" title="HTML5"><div class="logo-icon html-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M8 4L10.8 36L24 40L37.2 36L40 4H8Z" fill="#E44D26"/><path d="M24 37.6V7.6H36.6L34.2 33.4L24 37.6Z" fill="#F16529"/><path d="M13.4 13.6H24V19.6H19.8L20.2 24H24V30H15.4L13.4 13.6Z" fill="white"/><path d="M24 13.6H34.6L34 19.6H24V13.6Z" fill="white"/><path d="M24 24H28.8L28.2 30L24 31.2V30H24V24Z" fill="white"/></svg>
+      </div><span>HTML5</span></div>
+      <div class="logo-item magnetic" title="CSS3"><div class="logo-icon css-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M8 4L10.8 36L24 40L37.2 36L40 4H8Z" fill="#1572B6"/><path d="M24 37.6V7.6H36.6L34.2 33.4L24 37.6Z" fill="#33A9DC"/><path d="M13.4 13.6H24V19.6H19.8L20.2 24H24V30H15.4L13.4 13.6Z" fill="white"/><path d="M24 13.6H34.6L34 19.6H24V13.6Z" fill="white"/><path d="M24 24H28.8L28.2 30L24 31.2V30H24V24Z" fill="white"/></svg>
+      </div><span>CSS3</span></div>
+      <div class="logo-item magnetic" title="JavaScript"><div class="logo-icon js-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect width="48" height="48" fill="#F7DF1E"/><text x="8" y="38" font-size="26" fill="#323330" font-weight="bold">JS</text></svg>
+      </div><span>JavaScript</span></div>
+      <div class="logo-item magnetic" title="MySQL"><div class="logo-icon mysql-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M4 32C4 32 8 28 14 30C20 32 22 36 28 36C34 36 38 32 38 32" stroke="#00618A" stroke-width="4" stroke-linecap="round"/><path d="M4 24C4 24 8 20 14 22C20 24 22 28 28 28C34 28 38 24 38 24" stroke="#00618A" stroke-width="4" stroke-linecap="round"/><text x="24" y="18" text-anchor="middle" font-size="10" fill="#00618A" font-weight="bold">MySQL</text></svg>
+      </div><span>MySQL</span></div>
+      <div class="logo-item magnetic" title="Git"><div class="logo-icon git-icon">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M44.7 21.9L26.1 3.3C25 2.2 23.1 2.2 22 3.3L18.2 7.1L22.9 11.8C24.1 11.4 25.5 11.7 26.5 12.7C27.5 13.7 27.8 15.2 27.3 16.4L31.8 20.9C33 20.4 34.5 20.7 35.5 21.7C36.9 23.1 36.9 25.4 35.5 26.8C34.1 28.2 31.8 28.2 30.4 26.8C29.3 25.7 29.1 24.1 29.7 22.8L25.5 18.6V30.1C25.8 30.3 26.1 30.5 26.3 30.7C27.7 32.1 27.7 34.4 26.3 35.8C24.9 37.2 22.6 37.2 21.2 35.8C19.8 34.4 19.8 32.1 21.2 30.7C21.5 30.4 21.8 30.2 22.2 30V18.3C21.8 18.1 21.5 17.9 21.2 17.6C20.1 16.5 19.8 14.9 20.4 13.6L15.8 9L3.3 21.5C2.2 22.6 2.2 24.5 3.3 25.6L21.9 44.2C23 45.3 24.9 45.3 26 44.2L44.7 25.5C45.8 24.5 45.8 22.9 44.7 21.9Z" fill="#F05032"/></svg>
+      </div><span>Git</span></div>
+      <div class="logo-item magnetic" title="Figma"><div class="logo-icon figma-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="14" y="4" width="10" height="13" rx="5" fill="#F24E1E"/><rect x="24" y="4" width="10" height="13" rx="5" fill="#FF7262"/><rect x="14" y="17" width="10" height="13" rx="5" fill="#A259FF"/><rect x="14" y="30" width="10" height="13" rx="5" fill="#0ACF83"/><circle cx="29" cy="23.5" r="6.5" fill="#1ABCFE"/></svg>
+      </div><span>Figma</span></div>
+      <div class="logo-item magnetic" title="Cisco"><div class="logo-icon cisco-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="20" width="4" height="12" rx="2" fill="#00BCEB"/><rect x="11" y="16" width="4" height="16" rx="2" fill="#00BCEB"/><rect x="18" y="12" width="4" height="20" rx="2" fill="#00BCEB"/><rect x="25" y="12" width="4" height="20" rx="2" fill="#00BCEB"/><rect x="32" y="16" width="4" height="16" rx="2" fill="#00BCEB"/><rect x="39" y="20" width="4" height="12" rx="2" fill="#00BCEB"/></svg>
+      </div><span>Cisco</span></div>
+      <div class="logo-item magnetic" title="Postman"><div class="logo-icon postman-icon">
+        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" fill="#FF6C37"/><path d="M31 17L21 27M21 27L24 30L34 20L31 17L21 27Z" stroke="white" stroke-width="2" stroke-linejoin="round"/><path d="M17 31L21 27" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+      </div><span>Postman</span></div>
+      <div class="logo-item magnetic" title="Assembly"><div class="logo-icon asm-icon">
+        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="4" fill="#555"/><text x="24" y="30" text-anchor="middle" font-size="11" fill="#00FF41" font-family="monospace" font-weight="bold">ASM</text></svg>
+      </div><span>Assembly</span></div>
+      <div class="logo-item magnetic" title="PHP"><div class="logo-icon php-icon">
+        <svg viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="24" rx="20" ry="12" fill="#777BB4"/><text x="24" y="28" text-anchor="middle" font-size="14" fill="white" font-weight="bold">php</text></svg>
+      </div><span>PHP</span></div>
+    </div>
+
+    <div class="skills-cards reveal-fade">
+      <div class="sk-card magnetic"><div class="sk-num">01</div><h3>Mobile Dev</h3><p>Flutter + Dart for cross-platform mobile. Node.js + Firebase backend. REST APIs &amp; Gemini AI.</p></div>
+      <div class="sk-card magnetic"><div class="sk-num">02</div><h3>Web Dev</h3><p>HTML5, CSS3, JavaScript, PHP/MySQL. Full responsive frontends built from scratch.</p></div>
+      <div class="sk-card magnetic"><div class="sk-num">03</div><h3>Networking</h3><p>Cisco Packet Tracer, VLAN, NAT, Access Mode, Inter-VLAN Routing &amp; Subnetting.</p></div>
+      <div class="sk-card magnetic"><div class="sk-num">04</div><h3>QA Testing</h3><p>Manual testing, cross-browser (Chrome/Firefox/Edge), Postman API testing, formal bug reports.</p></div>
+      <div class="sk-card magnetic"><div class="sk-num">05</div><h3>Systems</h3><p>C++, Java, C#, Python, Assembly 8086 (IPAX). OOP, DSA, low-level programming.</p></div>
+      <div class="sk-card magnetic"><div class="sk-num">06</div><h3>Leadership</h3><p>MUN Best Delegate, General Secretary Student Council, PR Ambassador, Media Lead, Event Management.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PROJECTS ═══════ -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 03 — Projects ]</div>
+    <h2 class="big-heading split-text reveal-fade">Things I've<br/>shipped.</h2>
+    <div class="projects-list">
+
+      <div class="project-row reveal-slide" data-index="01">
+        <div class="pr-num">01</div>
+        <div class="pr-info">
+          <h3>Restaurant Management System</h3>
+          <p>3 Flutter apps — Customer, Admin, Kitchen. QR-code WiFi auth. Gemini AI. Node.js + Firebase backend.</p>
+          <div class="pr-tags"><span>Flutter</span><span>Node.js</span><span>Firebase</span><span>Gemini API</span><span>QR Auth</span></div>
+        </div>
+        <div class="pr-type">Mobile · Full-Stack</div>
+        <a href="https://github.com/umree012" target="_blank" class="pr-arrow magnetic">↗</a>
+      </div>
+
+      <div class="project-row reveal-slide" data-index="02">
+        <div class="pr-num">02</div>
+        <div class="pr-info">
+          <h3>University Network System</h3>
+          <p>Departmental network in Cisco Packet Tracer with VLANs, NAT, Access Mode &amp; inter-VLAN routing.</p>
+          <div class="pr-tags"><span>Cisco</span><span>VLAN</span><span>NAT</span><span>Networking</span></div>
+        </div>
+        <div class="pr-type">Networking</div>
+        <div class="pr-arrow">—</div>
+      </div>
+
+      <div class="project-row reveal-slide" data-index="03">
+        <div class="pr-num">03</div>
+        <div class="pr-info">
+          <h3>Uber App Replica</h3>
+          <p>Console-based Uber in C++ — ride queues, driver matching, DSA concepts implemented from scratch.</p>
+          <div class="pr-tags"><span>C++</span><span>DSA</span><span>Queues</span><span>OOP</span></div>
+        </div>
+        <div class="pr-type">Systems · DSA</div>
+        <div class="pr-arrow">—</div>
+      </div>
+
+      <div class="project-row reveal-slide" data-index="04">
+        <div class="pr-num">04</div>
+        <div class="pr-info">
+          <h3>Assembly Calculator</h3>
+          <p>Menu-driven calculator on IPAX 8086 — arithmetic operations and Bubble Sort in pure Assembly.</p>
+          <div class="pr-tags"><span>Assembly</span><span>8086</span><span>IPAX</span><span>COAL</span></div>
+        </div>
+        <div class="pr-type">Low-Level · Systems</div>
+        <div class="pr-arrow">—</div>
+      </div>
+
+      <div class="project-row reveal-slide" data-index="05">
+        <div class="pr-num">05</div>
+        <div class="pr-info">
+          <h3>Restaurant Menu Websites</h3>
+          <p>Two live interactive menu websites hand-coded in HTML/CSS/JS. Clean UI, fast, mobile-friendly.</p>
+          <div class="pr-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="pr-type">Web · UI</div>
+        <div class="pr-links">
+          <a href="https://umree012.github.io/New-Shalimar-Restaurant-Menu/" target="_blank" class="pr-arrow magnetic">↗</a>
+          <a href="https://umree012.github.io/Baker-s-Cottage-Menu/" target="_blank" class="pr-arrow magnetic" style="margin-left:8px">↗</a>
+        </div>
+      </div>
+
+      <div class="project-row reveal-slide" data-index="06">
+        <div class="pr-num">06</div>
+        <div class="pr-info">
+          <h3>Charity Management System</h3>
+          <p>Desktop app in Java + MySQL plus a full web version in PHP/HTML/CSS for managing donations.</p>
+          <div class="pr-tags"><span>Java</span><span>MySQL</span><span>PHP</span><span>Web</span></div>
+        </div>
+        <div class="pr-type">Full-Stack · Desktop</div>
+        <div class="pr-arrow">—</div>
+      </div>
+
+    </div>
+    <div class="projects-cta reveal-fade">
+      <a href="https://github.com/umree012" target="_blank" class="btn-main magnetic">View All on GitHub ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ EXPERIENCE ═══════ -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 04 — Experience ]</div>
+    <h2 class="big-heading split-text reveal-fade">Where I've<br/>worked.</h2>
+    <div class="exp-list">
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">2026 — Now</span></div>
+        <div class="exp-right">
+          <h3>IT Intern <span>— Pakistan Aeronautical Complex (PAC) Kamra</span></h3>
+          <p>MRF Computer Centre · Department of IT (MRF &amp; PAC Board IT). Working with real mission-critical IT infrastructure at one of Pakistan's most prestigious defence organisations.</p>
+          <div class="exp-tags"><span>Defence IT</span><span>IT Infrastructure</span><span>MRF Factor</span></div>
+        </div>
+      </div>
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">2023 — Now</span></div>
+        <div class="exp-right">
+          <h3>CEO &amp; Founder <span>— Digital IT (Startup)</span></h3>
+          <p>Founded and run a software startup delivering mobile and web development solutions to clients. Full project lifecycle ownership from requirements to delivery.</p>
+          <div class="exp-tags"><span>Startup</span><span>Mobile Dev</span><span>Client Projects</span></div>
+        </div>
+      </div>
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">2023 — Now</span></div>
+        <div class="exp-right">
+          <h3>Freelancer <span>— Upwork</span></h3>
+          <p>Freelance development work for international clients. Web and mobile development, QA testing, and tech consulting.</p>
+          <div class="exp-tags"><span>Freelance</span><span>International Clients</span><span>Remote</span></div>
+          <a href="https://www.upwork.com/freelancers/~0110e004e3355dd044" target="_blank" class="text-link">View Profile ↗</a>
+        </div>
+      </div>
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">Campus</span></div>
+        <div class="exp-right">
+          <h3>PR Ambassador <span>— Zindagi Price App (JS Bank)</span></h3>
+          <p>Campus representative for JS Bank's Zindagi app at Air University Kamra — student outreach, adoption campaigns, and brand communication.</p>
+          <div class="exp-tags"><span>PR</span><span>FinTech</span><span>Brand</span></div>
+        </div>
+      </div>
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">2026</span></div>
+        <div class="exp-right">
+          <h3>Media Lead <span>— Get Together 2k26, CS Dept</span></h3>
+          <p>Led entire digital media &amp; PR for the university CS department event. Recognised by HOD Dr. Muhammad Saud for creative vision and outstanding leadership.</p>
+          <div class="exp-tags"><span>Media Lead</span><span>Event</span><span>PR</span></div>
+        </div>
+      </div>
+      <div class="exp-item reveal-slide">
+        <div class="exp-left"><span class="exp-year">Ongoing</span></div>
+        <div class="exp-right">
+          <h3>Content Creator <span>— @umree_drafts</span></h3>
+          <p>Daily Instagram content creator producing relatable, funny, and aesthetic university life content for a Gen Z student audience.</p>
+          <div class="exp-tags"><span>Content</span><span>Instagram</span><span>Gen Z</span></div>
+          <a href="https://instagram.com/umree_drafts" target="_blank" class="text-link">@umree_drafts ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ MUN ═══════ -->
+<section class="mun section" id="mun">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 05 — MUN &amp; Leadership ]</div>
+    <h2 class="big-heading split-text reveal-fade">Awards &amp;<br/>recognition.</h2>
+    <div class="mun-grid">
+      <div class="mun-card gold reveal-scale magnetic">
+        <div class="mun-top"><span class="mun-trophy">🏆</span><span class="mun-badge">Best Delegate</span></div>
+        <h3>FIMMUN V — Apex Edition</h3>
+        <p>Won Best Delegate in Special Crisis Cell (SCC), then progressed to win Best Delegate of Crisis Committee (BDCC) — the top tier among <strong>600+ participants</strong>. Physical trophy awarded by Fazaia Inter College Minhas.</p>
+        <div class="mun-meta">SCC · BDCC · 600+ Delegates · 2026</div>
+      </div>
+      <div class="mun-card silver reveal-scale magnetic">
+        <div class="mun-top"><span class="mun-trophy">🥈</span><span class="mun-badge">Special Mention</span></div>
+        <h3>AIRMUN26</h3>
+        <p>Special Mention (3rd position) among 40 delegates from diverse backgrounds and fields. Recognised for expertise in public and political relations.</p>
+        <div class="mun-meta">3rd Position · 40 Delegates · 2026</div>
+      </div>
+      <div class="mun-card bronze reveal-scale magnetic">
+        <div class="mun-top"><span class="mun-trophy">🎖️</span><span class="mun-badge">Special Mentions OIC</span></div>
+        <h3>AUKMUN'25</h3>
+        <p>Special Mentions in OIC Committee at Air University Kamra Model United Nations. First of three MUN conferences competed.</p>
+        <div class="mun-meta">OIC Committee · 2025</div>
+      </div>
+    </div>
+    <div class="leadership-strip reveal-fade">
+      <div class="ls-item"><span>⚡</span><p>General Secretary — Student Council, Air University Kamra</p></div>
+      <div class="ls-item"><span>🎓</span><p>Core Management — FYP Expo Open House &amp; Junior Welcome Event</p></div>
+      <div class="ls-item"><span>💬</span><p>Competitive Debater — Constructive criticism &amp; motivational communication</p></div>
+      <div class="ls-item"><span>🏇</span><p>Passionate about horse riding, tentpegging &amp; physical fitness</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CERTIFICATES ═══════ -->
+<section class="certificates section" id="certificates">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 06 — Certificates ]</div>
+    <h2 class="big-heading split-text reveal-fade">Proof of<br/>learning.</h2>
+    <div class="certs-grid">
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/mediateam.jpg','Media Lead — Get Together 2k26')">
+        <div class="cert-img"><img src="certificates/mediateam.jpg" alt="Media Lead"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>Media Lead — Get Together 2k26</h4><p>CS Dept · Air University Kamra</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/fimmun_cert.jpg','FIMMUN V — Participation')">
+        <div class="cert-img"><img src="certificates/fimmun_cert.jpg" alt="FIMMUN V"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>FIMMUN V — Apex Edition</h4><p>SCC Delegate Participation</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/fimmun_trophy.jpg','FIMMUN V — Best Delegate Trophy')">
+        <div class="cert-img"><img src="certificates/fimmun_trophy.jpg" alt="FIMMUN Trophy"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>FIMMUN V — Best Delegate</h4><p>Trophy · Fazaia Inter College Minhas</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/aukmun25.jpg','AUKMUN 25 — Special Mentions OIC')">
+        <div class="cert-img"><img src="certificates/aukmun25.jpg" alt="AUKMUN 25"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>AUKMUN'25 — Special Mentions</h4><p>OIC Committee · Air University</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/smartcode.jpg','Smart Code Arena')">
+        <div class="cert-img"><img src="certificates/smartcode.jpg" alt="Smart Code Arena"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>Smart Code Arena</h4><p>Coding Competition · Air University</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/techbencher.jpg','Tech Benchers Workshop')">
+        <div class="cert-img"><img src="certificates/techbencher.jpg" alt="Tech Benchers"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>Tech Benchers Workshop</h4><p>Smart Tech · Air University</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/aibeginners.jpg','HP LIFE — AI for Beginners')">
+        <div class="cert-img"><img src="certificates/aibeginners.jpg" alt="AI for Beginners"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>AI for Beginners</h4><p>HP LIFE · HP Foundation</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/datascience.jpg','HP LIFE — Data Science')">
+        <div class="cert-img"><img src="certificates/datascience.jpg" alt="Data Science"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>Data Science &amp; Analytics</h4><p>HP LIFE · HP Foundation</p></div>
+      </div>
+      <div class="cert-item reveal-scale" onclick="openLightbox('certificates/promptengineer.jpg','Prompt Engineering — Alison')">
+        <div class="cert-img"><img src="certificates/promptengineer.jpg" alt="Prompt Engineering"/></div>
+        <div class="cert-overlay-text"><span>View ↗</span></div>
+        <div class="cert-caption"><h4>Prompt Engineering for AI</h4><p>Alison · CPD Certified</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <img id="lb-img" src="" alt=""/>
+    <p id="lb-cap"></p>
+  </div>
+</div>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-label reveal-fade">[ 07 — Contact ]</div>
+    <h2 class="big-heading split-text reveal-fade">Let's work<br/>together.</h2>
+    <div class="contact-grid">
+      <div class="contact-left reveal-fade">
+        <p class="contact-lead">Got a project, internship, or opportunity? I'm always open to talking.</p>
+        <div class="contact-info">
+          <div class="ci"><span>// Phone</span><a href="tel:+923173064068">03173064068 / 03700964068</a></div>
+          <div class="ci"><span>// Personal</span><a href="mailto:umarkhan6918@gmail.com">umarkhan6918@gmail.com</a></div>
+          <div class="ci"><span>// Work</span><a href="mailto:umarrashid69180@gmail.com">umarrashid69180@gmail.com</a></div>
+          <div class="ci"><span>// University</span><a href="mailto:245198@aack.au.edu.pk">245198@aack.au.edu.pk</a></div>
+        </div>
+        <div class="contact-social">
+          <a href="https://github.com/umree012" target="_blank" class="cs-btn magnetic">GitHub ↗</a>
+          <a href="https://instagram.com/umree_drafts" target="_blank" class="cs-btn magnetic">@umree_drafts ↗</a>
+          <a href="https://www.upwork.com/freelancers/~0110e004e3355dd044" target="_blank" class="cs-btn magnetic">Upwork ↗</a>
+          <a href="Muhammad_Umar_Rashid_CV.pdf" download class="cs-btn cs-btn-fill magnetic">Download CV ↓</a>
+        </div>
+      </div>
+      <div class="contact-right reveal-scale">
+        <form id="contact-form" onsubmit="handleForm(event)">
+          <div class="fg"><label>Name</label><input type="text" id="cf-name" placeholder="Your name" required/></div>
+          <div class="fg"><label>Email</label><input type="email" id="cf-email" placeholder="your@email.com" required/></div>
+          <div class="fg"><label>Message</label><textarea id="cf-msg" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn-main full magnetic">Send Message →</button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">U<span>.</span>R</div>
+      <div class="footer-links">
+        <a href="#about">About</a><a href="#projects">Projects</a>
+        <a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Muhammad Umar Rashid — CS Student · Developer · Founder · MUN Best Delegate · PAC Intern</p>
+      <p>© 2026 — Built from scratch. Deployed on GitHub Pages.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
